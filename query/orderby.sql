@@ -33,3 +33,4 @@ ORDER BY store_id,
     first_name ASC,
     last_name DESC;
 --   retutns the store_id in ascending order , firstname in ascending order  and lastname in desscending order and it is the same thing as the prev only that it returns firstname and lastname , although it sortes by order_id, firstname and lastname
+--
