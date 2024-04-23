@@ -4,3 +4,4 @@ SELECT first_name,
     last_name,
     email
 FROM customer --  This finds and returns all the columns of firstname, lastname, emails respectively from the customer table
+    -- SELECT AND WHERE
