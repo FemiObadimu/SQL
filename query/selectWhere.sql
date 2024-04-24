@@ -53,3 +53,8 @@ WHERE title = 'Outlaw Hanky' -- returns the description of the movie [Outlaw Han
 SELECT phone
 FROM address
 WHERE address = '259 Ipoh Drive' --  returns the phone number of the customer that stays in 259, Ipoh Drive
+    -- 
+SELECT COUNT(*)
+FROM payment
+WHERE amount > 5;
+--  returns total amount of payment greater than $5

@@ -3,3 +3,6 @@
 SELECT DISTINCT rating
 FROM film;
 --  This returns only ratings that are availble without repetition
+-- 
+SELECT COUNT(DISTINCT(district))
+FROM address;
