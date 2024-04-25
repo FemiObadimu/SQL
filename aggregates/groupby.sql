@@ -1,3 +1,4 @@
+-- Remember the GROUP BY statement works with column and not Aggregates
 SELECT customer_id
 FROM payment
 GROUP BY customer_id
@@ -51,4 +52,4 @@ GROUP BY customer_id
 ORDER BY SUM(amount) DESC
 LIMIT 5;
 -- this returns the  ids of the top 5 cuatomers who has spent a lot to see movies
---
+- -
