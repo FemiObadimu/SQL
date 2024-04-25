@@ -22,3 +22,21 @@ GROUP BY customer_id
 HAVING COUNT(amount) >= 40;
 -- returns the ids of customers with transactions greater than 40  
 --
+
+SELECT customer_id,
+    staff_id,
+    SUM(amount)
+FROM payment
+WHERE staff_id = 2
+GROUP BY customer_id,
+    staff_id
+HAVING SUM(amount) > 100;
+-- the above is sames as the below 
+SELECT customer_id,
+    SUM(amount)
+FROM payment
+WHERE staff_id = 2
+GROUP BY customer_id
+HAVING SUM(amount) > 100;
+-- returns the customerIds of customers who have spent more than a $100 in payment transaction with staff_id number 2 
+- -
